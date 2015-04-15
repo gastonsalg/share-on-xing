@@ -165,6 +165,14 @@ class XING_Share_Settings {
       'xing-share-settings',
       'xing_share_general'
     );
+
+    add_settings_field(
+      'xing_share_follow_url',
+      'URL to follow',
+      array( XING_Share_Settings, 'xing_share_follow_url_callback' ),
+      'xing-share-settings',
+      'xing_share_general'
+    );
   }
 
   public function xing_share_display_on_callback()
@@ -200,7 +208,6 @@ class XING_Share_Settings {
 
   public function xing_share_layout_callback()
   {
-    print self::$options['layout'];
     if ( ! isset( self::$options['layout'] ) )
       self::$options['layout'] = self::$defaults['layout'];
     else
@@ -245,10 +252,16 @@ class XING_Share_Settings {
 
   public function xing_share_label_callback()
   {
-    printf(
-      '<input type="text" placeholder="Share this article" name="xing_share[label]" value="%s" />',
-      self::$options['label']
-    );
+    printf( '<input type="text" placeholder="Share this article" name="xing_share[label]" value="%s" class="regular-text" />', self::$options['label'] );
+    print( '<p class="description">Displays a label next to the button.</p>' );
+  }
+
+  public function xing_share_follow_url_callback()
+  { ?>
+    <fieldset><?php
+      printf( '<input type="text" placeholder="https://www.xing.com/news/pages/marketing-werbung-44" name="xing_share[follow-url]" value="%s" class="regular-text" />', self::$options['follow-url'] );
+      print( '<p class="description">Optional. Includes a <a href="https://dev.xing.com/plugins/share_button/docs#follow-integration" target="_blank">Follow button</a> on the success page displayed after sharing.<br>Must be a valid XING News or Company page to be followed, otherwise it will be ignored.</p>' ); ?>
+    </fieldset><?php
   }
 
   private function xing_share_legacy_configuration_detected() {

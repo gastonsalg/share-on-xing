@@ -13,17 +13,20 @@ class XING_Share_Button {
   public function asHTML() {
     $html = '<div data-platform="wordpress" ';
 
-    if ( isset( $this->configuration['shape'] ) )
+    if ( !empty( $this->configuration['shape'] ) )
       $html .= 'data-shape="'. $this->configuration['shape'] .'" ';
 
-    if ( isset( $this->configuration['counter'] ) )
+    if ( !empty( $this->configuration['counter'] ) )
       $html .= 'data-counter="' . $this->configuration['counter'] . '" ';
 
-    if ( isset( $this->configuration['lang'] ) )
+    if ( !empty($this->configuration['lang'] != '' ) )
       $html .= 'data-lang="'. $this->configuration['lang'] .'" ';
 
-    if ( isset( $this->configuration['url'] ) )
+    if ( !empty( $this->configuration['url'] ) )
       $html .= 'data-url="'. $this->configuration['url'] .'" ';
+
+    if ( !empty( $this->configuration['follow-url'] ) )
+      $html .= 'data-follow-url="'. $this->configuration['follow-url'] .'" ';
 
     $html .= 'data-type="xing/share"></div>';
 
