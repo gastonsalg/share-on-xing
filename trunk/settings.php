@@ -21,9 +21,6 @@ class XING_Share_Settings {
     "share-right" => "\"Share\" label with counter on the right",
     "share-top" => "\"Share\" label with counter on top",
     "share" => "\"Share\" label with no counter",
-    "xing-right" => "\"XING\" label with counter on the right",
-    "xing-top" => "\"XING\" label with counter on top",
-    "xing" => "\"XING\" label with no counter",
     "square-right" => "Square with counter on the right",
     "square-top" => "Square with counter on top",
     "square"  => "Square with no counter"
@@ -66,8 +63,7 @@ class XING_Share_Settings {
       'Share on XING',
       'manage_options',
       'xing-share-settings',
-      array( XING_Share_Settings, 'create_admin_page' ),
-      'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnDQogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciDQogICB3aWR0aD0iMjAiDQogICBoZWlnaHQ9IjIwIj4NCiAgPGcNCiAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC4xOTYwMDMwNywwLDAsMC4xOTY1OTIzNSw0LC0xODkuODg2MzYpIg0KICAgICBzdHlsZT0iZmlsbDojZmZmZmZmIj4NCiAgICA8cGF0aA0KICAgICAgIGQ9Im0gNTIuMTI1LDk3Ni4wNjIxOCBjIC0xLjYsMCAtMi40LDEgLTIuOSwyLjEgMCwwIC0yMy43LDQyLjAwMDAyIC0yNC41LDQzLjQwMDAyIDAsMC4xIDE1LjYsMjguNyAxNS42LDI4LjcgMC41LDEgMS40LDIuMSAzLjEsMi4xIGggMTEgYyAwLjcsMCAxLjIsLTAuMiAxLjUsLTAuNyAwLjMsLTAuNSAwLjMsLTEuMSAwLC0xLjcgbCAtMTUuNSwtMjguMyBjIDAsMCAwLC0wLjEgMCwtMC4xIGwgMjQuNCwtNDMuMTAwMDIgYyAwLjMsLTAuNiAwLjMsLTEuMiAwLC0xLjcgLTAuMywtMC41IC0wLjgsLTAuNyAtMS41LC0wLjcgaCAtMTEuMiB6Ig0KICAgICAgIHN0eWxlPSJmaWxsOiNmZmZmZmYiIC8+DQogICAgPHBhdGgNCiAgICAgICBkPSJtIDUuOTI1LDk5MS4xNjIxOCBjIC0wLjcsMCAtMS4yLDAuMyAtMS41LDAuNyAtMC4zLDAuNSAtMC4zLDEuMSAwLDEuNyBsIDcuNSwxMi44MDAwMiBjIDAsMCAwLDAuMSAwLDAuMSBsIC0xMS43LDIwLjYgYyAtMC4zLDAuNiAtMC4zLDEuMiAwLDEuNyAwLjMsMC41IDAuOCwwLjcgMS41LDAuNyBoIDExIGMgMS42LDAgMi40LC0xLjEgMi45LC0yLjEgMCwwIDExLjUsLTIwLjIgMTEuOSwtMjEgMCwtMC4xIC03LjYsLTEzLjIwMDAyIC03LjYsLTEzLjIwMDAyIC0wLjUsLTEgLTEuNCwtMi4xIC0zLjEsLTIuMSBoIC0xMC45IHoiDQogICAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZiIgLz4NCiAgPC9nPg0KPC9zdmc+DQo='
+      array( XING_Share_Settings, 'create_admin_page' ), 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnDQogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciDQogICB3aWR0aD0iMjAiDQogICBoZWlnaHQ9IjIwIj4NCiAgPGcNCiAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC4xOTYwMDMwNywwLDAsMC4xOTY1OTIzNSw0LC0xODkuODg2MzYpIg0KICAgICBzdHlsZT0iZmlsbDojZmZmZmZmIj4NCiAgICA8cGF0aA0KICAgICAgIGQ9Im0gNTIuMTI1LDk3Ni4wNjIxOCBjIC0xLjYsMCAtMi40LDEgLTIuOSwyLjEgMCwwIC0yMy43LDQyLjAwMDAyIC0yNC41LDQzLjQwMDAyIDAsMC4xIDE1LjYsMjguNyAxNS42LDI4LjcgMC41LDEgMS40LDIuMSAzLjEsMi4xIGggMTEgYyAwLjcsMCAxLjIsLTAuMiAxLjUsLTAuNyAwLjMsLTAuNSAwLjMsLTEuMSAwLC0xLjcgbCAtMTUuNSwtMjguMyBjIDAsMCAwLC0wLjEgMCwtMC4xIGwgMjQuNCwtNDMuMTAwMDIgYyAwLjMsLTAuNiAwLjMsLTEuMiAwLC0xLjcgLTAuMywtMC41IC0wLjgsLTAuNyAtMS41LC0wLjcgaCAtMTEuMiB6Ig0KICAgICAgIHN0eWxlPSJmaWxsOiNmZmZmZmYiIC8+DQogICAgPHBhdGgNCiAgICAgICBkPSJtIDUuOTI1LDk5MS4xNjIxOCBjIC0wLjcsMCAtMS4yLDAuMyAtMS41LDAuNyAtMC4zLDAuNSAtMC4zLDEuMSAwLDEuNyBsIDcuNSwxMi44MDAwMiBjIDAsMCAwLDAuMSAwLDAuMSBsIC0xMS43LDIwLjYgYyAtMC4zLDAuNiAtMC4zLDEuMiAwLDEuNyAwLjMsMC41IDAuOCwwLjcgMS41LDAuNyBoIDExIGMgMS42LDAgMi40LC0xLjEgMi45LC0yLjEgMCwwIDExLjUsLTIwLjIgMTEuOSwtMjEgMCwtMC4xIC03LjYsLTEzLjIwMDAyIC03LjYsLTEzLjIwMDAyIC0wLjUsLTEgLTEuNCwtMi4xIC0zLjEsLTIuMSBoIC0xMC45IHoiDQogICAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZiIgLz4NCiAgPC9nPg0KPC9zdmc+DQo='
     );
 
     add_action( 'admin_enqueue_scripts', array( XING_Share_Settings, 'xing_share_settings_static_files' ) );
@@ -204,8 +200,13 @@ class XING_Share_Settings {
 
   public function xing_share_layout_callback()
   {
+    print self::$options['layout'];
     if ( ! isset( self::$options['layout'] ) )
-      self::$options['layout'] = self::$defaults['layout']; ?>
+      self::$options['layout'] = self::$defaults['layout'];
+    else
+      // v1.0.13 removes all 'XING' label options since they are not supported by the plugin anymore
+      // This line is added for backwards compatibility
+      self::$options['layout'] = str_replace('xing', 'share', self::$options['layout']); ?>
     <fieldset>
         <ul class="xing-share-layout-options"><?php
           foreach ( self::$layout_options as $layout => $description ) {

@@ -36,15 +36,12 @@ With counters
 
 * `share-top` rectangular shape, "Share"/"Teilen" labeled, with counter balloon on top
 * `share-right` rectangular shape, "Share"/"Teilen" labeled, with counter balloon on the right
-* `xing-top` rectangular shape, "XING" labeled, with counter balloon on top
-* `xing-right` rectangular shape, "XING" labeled, with counter balloon on the right
 * `square-top` square shape, no label, with counter balloon on top
 * `square-right` square shape, no label, with counter balloon on the right
 
 Without counters
 
 * `share` rectangular shape, "Share"/"Teilen" labeled
-* `xing` rectangular shape, "XING" labeled
 * `square` square shape, no label
 
 The `lang` option defines the language in which the information shown by the button is displayed. Default value is `en` (English), can be set to `de` (German).
@@ -83,6 +80,9 @@ And always feel free to contact us!
 2. XING Share applied on a post
 
 == Changelog ==
+
+= 1.0.13 =
+* Removes the 'XING' label options since the plugin does not support them anymore
 
 = 1.0.12 =
 * Fixes styling for the label displayed next to the button
