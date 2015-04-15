@@ -19,7 +19,7 @@ class XING_Share_Button {
     if ( !empty( $this->configuration['counter'] ) )
       $html .= 'data-counter="' . $this->configuration['counter'] . '" ';
 
-    if ( !empty($this->configuration['lang'] != '' ) )
+    if ( !empty($this->configuration['lang']) )
       $html .= 'data-lang="'. $this->configuration['lang'] .'" ';
 
     if ( !empty( $this->configuration['url'] ) )
